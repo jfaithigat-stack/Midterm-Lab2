@@ -1,0 +1,78 @@
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 56px;
+}
+
+.hero-img {
+    height: 450px;
+    object-fit: cover;
+}
+
+/* Gallery item with hover effect and caption overlay */
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+}
+
+.gallery-item .overlay h6 {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.gallery-item .overlay p {
+    margin: 3px 0 0;
+    font-size: 0.75rem;
+    opacity: 0.85;
+}
+
+/* Category cards */
+.category-card {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-3px);
+}
+
+/* Form focus */
+.form-control:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+.modal-content {
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .hero-img {
+        height: 250px;
+    }
+    .gallery-item img {
+        height: 180px;
+    }
+}

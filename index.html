@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lens on Earth - Nature & Environment Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navbar with Responsive Collapse -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-tree-fill text-success me-2"></i>Lens on Earth</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#categories">Categories</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <section id="home" class="pt-5">
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="CAROUSEL_1.jpg" class="d-block w-100 hero-img" alt="Nature">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                        <h2>Explore the Beauty of Nature</h2>
+                        <p>Discover breathtaking landscapes from around the world.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="CAROUSEL_2.jpg" class="d-block w-100 hero-img" alt="Environment">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                        <h2>Preserve Our Planet</h2>
+                        <p>Every action counts in protecting our environment.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="CAROUSEL_3.jpg" class="d-block w-100 hero-img" alt="Wilderness">
+                    <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-3">
+                        <h2>Nature Is Our Home</h2>
+                        <p>Celebrating the wonders of the natural world.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section id="gallery" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center text-success fw-bold mb-2">Nature Gallery</h2>
+            <p class="text-center text-muted mb-4">Click to view full size.</p>
+
+            <div class="row g-3">
+                <!-- Config 1: col-12 col-sm-6 col-md-4 col-lg-3 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#modal1">
+                        <img src="IMAGE_1.jpg" alt="Golden Forest">
+                        <div class="overlay"><h6>Golden Forest</h6><p>Sunlit trees</p></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#modal2">
+                        <img src="IMAGE_2.jpg" alt="Mountain Lake">
+                        <div class="overlay"><h6>Mountain Lake</h6><p>Still reflections</p></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#modal3">
+                        <img src="IMAGE_3.jpg" alt="Waterfall">
+                        <div class="overlay"><h6>Mossy Waterfall</h6><p>Rushing water</p></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#modal4">
+                        <img src="IMAGE_4.jpg" alt="Green Valley">
+                        <div class="overlay"><h6>Winding Valley</h6><p>Green hills</p></div>
+                    </div>
+                </div>
+
+                <!-- Config 2: col-12 col-sm-6 col-md-6 col-lg-4 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#modal5">
+                        <img src="IMAGE_5.jpg" alt="Aerial Forest">
+                        <div class="overlay"><h6>Forest Canopy</h6><p>Aerial view</p></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#modal6">
+                        <img src="IMAGE_6.jpg" alt="Autumn Forest">
+                        <div class="overlay"><h6>Autumn Forest</h6><p>Fall colors</p></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#modal7">
+                        <img src="IMAGE_7.jpg" alt="Wildflower Meadow">
+                        <div class="overlay"><h6>Wildflower Meadow</h6><p>Colorful blooms</p></div>
+                    </div>
+                </div>
+
+                <!-- Config 3: col-12 col-sm-12 col-md-6 col-lg-4 -->
+                <div class="col-12 col-sm-12 col-md-6 col-lg-4">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#modal8">
+                        <img src="IMAGE_8.jpg" alt="Sunflower Field">
+                        <div class="overlay"><h6>Sunflower Field</h6><p>Golden hour</p></div>
+                    </div>
+                </div>
+
+                <!-- Config 4: col-12 col-sm-6 col-md-4 col-lg-4 -->
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#modal9">
+                        <img src="IMAGE_9.jpg" alt="Misty Pine Forest">
+                        <div class="overlay"><h6>Misty Pines</h6><p>Morning fog</p></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-4">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#modal10">
+                        <img src="IMAGE_10.jpg" alt="Sea Cliffs">
+                        <div class="overlay"><h6>Sea Cliffs</h6><p>Coastal rocks</p></div>
+                    </div>
+                </div>
+
+                <!-- Config 5: col-12 col-sm-6 col-md-6 col-lg-6 -->
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#modal11">
+                        <img src="IMAGE_11.jpg" alt="Ancient Trees">
+                        <div class="overlay"><h6>Ancient Trees</h6><p>Old growth</p></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#modal12">
+                        <img src="IMAGE_12.jpg" alt="Tropical Shore">
+                        <div class="overlay"><h6>Tropical Shore</h6><p>White sand</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories with Badges -->
+    <section id="categories" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-success fw-bold mb-4">Categories</h2>
+            <div class="row g-3 text-center justify-content-center">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card category-card h-100 border-0 shadow-sm p-3">
+                        <i class="bi bi-tree fs-1 text-success"></i>
+                        <h6 class="mt-2 fw-bold">Forests</h6>
+                        <span class="badge bg-success">5 Photos</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card category-card h-100 border-0 shadow-sm p-3">
+                        <i class="bi bi-water fs-1 text-primary"></i>
+                        <h6 class="mt-2 fw-bold">Water</h6>
+                        <span class="badge bg-primary">3 Photos</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card category-card h-100 border-0 shadow-sm p-3">
+                        <i class="bi bi-flower1 fs-1 text-warning"></i>
+                        <h6 class="mt-2 fw-bold">Flowers</h6>
+                        <span class="badge bg-warning text-dark">2 Photos</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card category-card h-100 border-0 shadow-sm p-3">
+                        <i class="bi bi-signpost fs-1 text-info"></i>
+                        <h6 class="mt-2 fw-bold">Valleys</h6>
+                        <span class="badge bg-info text-dark">1 Photo</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card category-card h-100 border-0 shadow-sm p-3">
+                        <i class="bi bi-tsunami fs-1 text-secondary"></i>
+                        <h6 class="mt-2 fw-bold">Coastline</h6>
+                        <span class="badge bg-secondary">1 Photo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About with Accordion -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center text-success fw-bold mb-4">About Lens on Earth</h2>
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                    <img src="ABOUT_IMAGE.jpg" class="img-fluid rounded shadow" alt="Nature">
+                </div>
+                <div class="col-12 col-lg-6">
+                    <p class="text-muted">Lens on Earth is a photography showcase dedicated to capturing and sharing the beauty of our natural world and promoting environmental awareness.</p>
+                    <div class="accordion" id="aboutAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true">Our Mission</button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#aboutAccordion">
+                                <div class="accordion-body">To inspire people to protect and preserve nature for future generations through visual storytelling.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Our Vision</button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                                <div class="accordion-body">A world where everyone values and conserves natural landscapes and ecosystems.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">Our Team</button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                                <div class="accordion-body">A group of nature photographers and environmentalists sharing our passion through digital media.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center text-success fw-bold mb-4">Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8 col-lg-6">
+                    <form>
+                        <div class="mb-3">
+                            <label for="contactName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="contactName" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactEmail" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="contactEmail" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="contactMessage" class="form-label">Message</label>
+                            <textarea class="form-control" id="contactMessage" rows="4" placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-success">Send Message</button>
+                        <button type="reset" class="btn btn-outline-secondary ms-2">Clear</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
+        <div class="container">
+            <h5><i class="bi bi-tree-fill text-success me-2"></i>Lens on Earth</h5>
+            <p class="small text-light mb-2">Showcasing nature's beauty and inspiring environmental awareness.</p>
+            <div class="mb-2">
+                <a href="#home" class="text-light text-decoration-none small me-3">Home</a>
+                <a href="#gallery" class="text-light text-decoration-none small me-3">Gallery</a>
+                <a href="#categories" class="text-light text-decoration-none small me-3">Categories</a>
+                <a href="#about" class="text-light text-decoration-none small me-3">About</a>
+                <a href="#contact" class="text-light text-decoration-none small">Contact</a>
+            </div>
+            <hr class="border-secondary">
+            <p class="small text-light mb-0">&copy; 2026 Lens on Earth. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals for Gallery Images -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content"><div class="modal-header bg-success text-white"><h5 class="modal-title">Golden Forest</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body text-center"><img src="IMAGE_1.jpg" class="img-fluid rounded" alt="Golden Forest"><p class="mt-3 text-muted">Warm morning sunlight streaming through the forest.</p></div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content"><div class="modal-header bg-success text-white"><h5 class="modal-title">Mountain Lake</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body text-center"><img src="IMAGE_2.jpg" class="img-fluid rounded" alt="Mountain Lake"><p class="mt-3 text-muted">A clear alpine lake reflecting snow-capped mountains.</p></div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal3" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content"><div class="modal-header bg-success text-white"><h5 class="modal-title">Mossy Waterfall</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body text-center"><img src="IMAGE_3.jpg" class="img-fluid rounded" alt="Waterfall"><p class="mt-3 text-muted">A powerful waterfall between moss-covered cliffs.</p></div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal4" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content"><div class="modal-header bg-success text-white"><h5 class="modal-title">Winding Valley</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body text-center"><img src="IMAGE_4.jpg" class="img-fluid rounded" alt="Green Valley"><p class="mt-3 text-muted">A green valley with winding roads and a river.</p></div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal5" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content"><div class="modal-header bg-success text-white"><h5 class="modal-title">Forest Canopy</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body text-center"><img src="IMAGE_5.jpg" class="img-fluid rounded" alt="Aerial Forest"><p class="mt-3 text-muted">Dense green treetops from a bird's eye view.</p></div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal6" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content"><div class="modal-header bg-success text-white"><h5 class="modal-title">Autumn Forest</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body text-center"><img src="IMAGE_6.jpg" class="img-fluid rounded" alt="Autumn Forest"><p class="mt-3 text-muted">A forest trail covered in golden autumn leaves.</p></div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal7" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content"><div class="modal-header bg-success text-white"><h5 class="modal-title">Wildflower Meadow</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body text-center"><img src="IMAGE_7.jpg" class="img-fluid rounded" alt="Wildflower Meadow"><p class="mt-3 text-muted">Colorful wildflowers blooming under a bright sky.</p></div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal8" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content"><div class="modal-header bg-success text-white"><h5 class="modal-title">Sunflower Field</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body text-center"><img src="IMAGE_8.jpg" class="img-fluid rounded" alt="Sunflower Field"><p class="mt-3 text-muted">Sunflowers glowing in the warm sunset light.</p></div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal9" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content"><div class="modal-header bg-success text-white"><h5 class="modal-title">Misty Pines</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body text-center"><img src="IMAGE_9.jpg" class="img-fluid rounded" alt="Misty Pine Forest"><p class="mt-3 text-muted">Pine trees standing among rocks in the morning fog.</p></div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal10" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content"><div class="modal-header bg-success text-white"><h5 class="modal-title">Sea Cliffs</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body text-center"><img src="IMAGE_10.jpg" class="img-fluid rounded" alt="Sea Cliffs"><p class="mt-3 text-muted">Towering coastal cliffs with waves crashing below.</p></div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal11" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content"><div class="modal-header bg-success text-white"><h5 class="modal-title">Ancient Trees</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body text-center"><img src="IMAGE_11.jpg" class="img-fluid rounded" alt="Ancient Trees"><p class="mt-3 text-muted">Massive old-growth trees covered in moss and fog.</p></div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal12" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content"><div class="modal-header bg-success text-white"><h5 class="modal-title">Tropical Shore</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div>
+                <div class="modal-body text-center"><img src="IMAGE_12.jpg" class="img-fluid rounded" alt="Tropical Shore"><p class="mt-3 text-muted">Aerial view of white sand and turquoise water.</p></div>
+                <div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
